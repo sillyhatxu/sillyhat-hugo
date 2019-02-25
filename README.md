@@ -274,6 +274,7 @@ contains all formats, including the current format, for a given page. Can be com
 ```
 **.Pages**
 ```
+ .Site.Pages ,暂时不知区别
 a collection of associated pages. This value will be nil within the context of regular content pages. See .Pages.
 ```
 **.Permalink**

@@ -3,4 +3,4 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 [params]
   author = "Cookie Xu"
-  description = "This is my first hugo project."
+  description = "This is my first hugo project"

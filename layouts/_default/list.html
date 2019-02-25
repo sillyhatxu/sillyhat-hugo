@@ -6,12 +6,15 @@
      <title>Document</title>
 </head>
 <body>
-     {{ $.Site.Params.author }}
-     {{ $.Site.Params.description }}
-
+     .Site.Params.description:{{ $.Site.Params.author }}
+     .Site.Params.description:{{ $.Site.Params.description }}
+     .IsPage{{ $.IsPage }}
+     {{ .Pages }}
+     {{ .Kind }}
+     {{ .Site.Pages }}
      {{ partial "header" (dict "Kind" .Kind "Template" "List") }}
      {{.Content}}
-     {{ range .Pages }}
+     {{ range .Site.Pages }}
           <div style="border: 1px solid black; margin:10px; padding:10px; ">
                <div style="font-size:20px;">
                     <a href="{{.URL}}">{{.Title}}</a>
