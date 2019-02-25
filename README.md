@@ -151,7 +151,7 @@ array of all content ordered by Date with the newest first. This array contains 
 ```
 a shortcut to the regular page collection. .Site.RegularPages is equivalent to where .Site.Pages "Kind" "page". See .Site.Pages.
 ```
-**<span id="jump">.Site.Sections</span>**
+**<span id="kind">.Site.Sections</span>**
 ```
 top-level directories of the site.
 ```
