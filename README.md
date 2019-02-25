@@ -30,9 +30,7 @@ sillyhat-hugo is a learning hugo project.
 
 `hugo new A.md`
 
-Format: ![https://github.com/xushikuan/sillyhat-hugo/readme-images/hugo-new-site.png](url)
-
-
+![](/mdfile/images/hugo-new-site.png)
 
 3. xxxx
 
