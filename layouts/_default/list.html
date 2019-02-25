@@ -6,10 +6,15 @@
      <title>Document</title>
 </head>
 <body>
-     <!-- -->
+     .Site.Params.description:{{ $.Site.Params.author }}
+     .Site.Params.description:{{ $.Site.Params.description }}
+     .IsPage{{ $.IsPage }}
+     {{ .Pages }}
+     {{ .Kind }}
+     {{ .Site.Pages }}
      {{ partial "header" (dict "Kind" .Kind "Template" "List") }}
      {{.Content}}
-     {{ range .Pages }}
+     {{ range .Site.Pages }}
           <div style="border: 1px solid black; margin:10px; padding:10px; ">
                <div style="font-size:20px;">
                     <a href="{{.URL}}">{{.Title}}</a>
@@ -18,7 +23,6 @@
                <div style="color:grey; font-size:16px;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
                <div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
                <div style="color:grey; font-size:16px;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-
                <p style="font-size:18px;">{{.Summary}}</p>
           </div>
      {{ end }}
