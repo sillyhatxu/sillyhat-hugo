@@ -1,9 +1,11 @@
-#sillyhat-hugo
+![](/mdfile/images/logo.png)  
+![](https://img.shields.io/badge/version-1.0-blue.svg)
+### Introduction
+----
+sillyhat-hugo is a learning hugo project.  
 
-```
-本项目为hugo学习笔记
-```
-
+### Step 1
+----
 1. Install hugo
 
 `brew install hugo`
@@ -28,7 +30,9 @@
 
 `hugo new A.md`
 
-Format: ![Alt Text](url)
+Format: ![https://github.com/xushikuan/sillyhat-hugo/readme-images/hugo-new-site.png](url)
+
+
 
 3. xxxx
 
