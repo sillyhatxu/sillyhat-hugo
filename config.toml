@@ -1,3 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+theme = "ga-hugo-theme"
+[params]
+    author = "Cookie Xu"
+    description = "This is my first hugo project."
